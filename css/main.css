@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Mulish", sans-serif; }
+
+p {
+  font-size: 1rem;
+  line-height: 1.5; }
+
+h1 {
+  font-size: 4rem;
+  font-weight: 300; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+.container {
+  width: 90%;
+  margin: auto; }
+
+.grad-bg {
+  height: 100%;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.6), #1c1c1c);
+  position: relative; }
+  .grad-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/img/showcase.jpg") no-repeat center center/cover;
+    z-index: -1; }
+
+.flex {
+  display: flex; }
+  .flex-column {
+    display: flex;
+    flex-direction: column; }
+
+.items-center {
+  align-items: center; }
+
+.justify-center {
+  justify-content: center; }
+
+.justify-between {
+  justify-content: space-between; }
+
+.justify-start {
+  justify-content: flex-start; }
+
+.justify-end {
+  justify-content: flex-end; }
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem; }
+  .btn__primary {
+    background: #eb9b18;
+    color: #f8f8f8;
+    border: 3px solid #eb9b18; }
+  .btn__outline {
+    color: #f8f8f8;
+    border: 3px solid #f8f8f8; }
+
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 99; }
+  .nav__top {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eb9b18; }
+    .nav__top p {
+      color: #f8f8f8;
+      font-weight: 100; }
+    .nav__top div a img {
+      width: 20px;
+      margin: 0 0.35rem; }
+  .nav__bottom {
+    padding: 1rem 0; }
+  .nav__brand img {
+    width: 50px; }
+  .nav__links a {
+    color: #f8f8f8;
+    margin-left: 1rem;
+    font-weight: 200;
+    transition: 0.35s; }
+    .nav__links a:hover {
+      color: #eb9b18; }
+  .nav__hamburger {
+    display: none; }
+
+@media screen and (max-width: 450px) {
+  .nav__top {
+    display: none; }
+  .nav__brand img {
+    width: 40px; }
+  .nav__links {
+    display: none; }
+  .nav__hamburger {
+    display: block; }
+    .nav__hamburger img {
+      width: 50px; } }
+
+.hero {
+  height: 80vh; }
+  .hero__container {
+    height: 100%; }
+  .hero__content h1 {
+    color: #f8f8f8;
+    font-weight: 300;
+    font-size: 5rem;
+    margin-bottom: 1rem; }
+  .hero__cta a {
+    margin-right: 0.5rem; }
+
+@media screen and (max-width: 450px) {
+  .hero {
+    height: 60vh; }
+    .hero__content h1 {
+      font-size: 3rem; } }
+
+.about {
+  padding-bottom: 5rem; }
+  .about__content {
+    background: rgba(18, 18, 18, 0.7);
+    text-align: center;
+    padding: 2rem;
+    backdrop-filter: blur(5px);
+    border-radius: 1rem; }
+    .about__content p {
+      color: #f8f8f8;
+      font-size: 1.55rem; }
+
+@media screen and (max-width: 450px) {
+  .about__content {
+    padding: 1rem; }
+    .about__content p {
+      font-size: 1.1rem; } }
+
+.services {
+  background: #1c1c1c; }
+  .services__grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr); }
+  .services__item {
+    height: 40vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); }
+    .services__item__content h2 {
+      font-size: 2rem;
+      color: #f8f8f8;
+      margin-bottom: 1rem; }
+    .services__item__content div a {
+      margin-right: 0.25rem; }
+    .services__item:first-child {
+      background: url("../assets/img/treat.jpg") no-repeat center center/cover;
+      grid-column: 1 / span 2; }
+    .services__item:nth-child(2) {
+      background: url("../assets/img/services.jpg") no-repeat center center/cover; }
+    .services__item:nth-child(3) {
+      background: url("../assets/img/agre.jpg") no-repeat center center/cover; }
+
+@media screen and (max-width: 450px) {
+  .services__grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem; }
+  .services__item:first-child {
+    grid-column: 1; } }
