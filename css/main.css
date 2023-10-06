@@ -250,11 +250,11 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("/dist/assets/img/treat.jpg") no-repeat center center/cover;
+    background: url("../assets/img/treat.jpg") no-repeat center center/cover;
     z-index: -1; }
   @media screen and (max-width: 450px) {
     .treatments__grad__bg::before {
-      background: url("/dist/assets/img/joint.jpg") no-repeat center center/cover; } }
+      background: url("../assets/img/joint.jpg") no-repeat center center/cover; } }
 
 .treatments__header {
   height: 100vh; }

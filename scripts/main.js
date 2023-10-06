@@ -20,6 +20,6 @@ const mobNav = document.querySelector('.mobile__nav');
 hamburger.addEventListener('click', function () {
   mobNav.classList.toggle('active');
   mobNav.classList.contains('active')
-    ? (hamburgerImg.src = 'assets/img/Menu/Close_round_light')
-    : (hamburgerImg.src = 'assets/img/Menu/Menu_Alt_05.png');
+    ? (hamburgerImg.src = '/assets/img/Menu/Close_round_light')
+    : (hamburgerImg.src = '/assets/img/Menu/Menu_Alt_05.png');
 });
