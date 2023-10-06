@@ -288,23 +288,23 @@ img {
   align-items: center;
   border-radius: 0.75rem; }
   .treatment__services__item:first-child {
-    background: url("/dist/assets/img/mma.jpg") no-repeat center center/cover; }
+    background: url("../assets/img/mma.jpg") no-repeat center center/cover; }
   .treatment__services__item:nth-child(2) {
-    background: url("/dist/assets/img/HFS.jpeg") no-repeat center center/cover; }
+    background: url("../assets/img/HFS.jpeg") no-repeat center center/cover; }
   .treatment__services__item:nth-child(3) {
-    background: url("/dist/assets/img/treat.jpg") no-repeat center center/cover; }
+    background: url("../assets/img/treat.jpg") no-repeat center center/cover; }
   .treatment__services__item:nth-child(4) {
-    background: url("/dist/assets/img/sport.jpg") no-repeat center center/cover; }
+    background: url("../assets/img/sport.jpg") no-repeat center center/cover; }
   .treatment__services__item:nth-child(5) {
-    background: url("/dist/assets/img/soft.jpg") no-repeat center center/cover; }
+    background: url("../assets/img/soft.jpg") no-repeat center center/cover; }
   .treatment__services__item:nth-child(6) {
-    background: url("/dist/assets/img/joint.jpg") no-repeat center center/cover; }
+    background: url("../assets/img/joint.jpg") no-repeat center center/cover; }
   .treatment__services__item:nth-child(7) {
-    background: url("/dist/assets/img/pre.jpg") no-repeat center center/cover; }
+    background: url("../assets/img/pre.jpg") no-repeat center center/cover; }
   .treatment__services__item:nth-child(8) {
-    background: url("/dist/assets/img/anti.jpg") no-repeat center center/cover; }
+    background: url("../assets/img/anti.jpg") no-repeat center center/cover; }
   .treatment__services__item:nth-child(9) {
-    background: url("/dist/assets/img/dec.jpg") no-repeat center center/cover; }
+    background: url("../assets/img/dec.jpg") no-repeat center center/cover; }
 
 .treatment__services__content {
   background: rgba(18, 18, 18, 0.8);
