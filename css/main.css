@@ -216,6 +216,29 @@ img {
   .footer p {
     font-size: 0.75rem; } }
 
+.mobile__nav {
+  position: fixed;
+  left: -150%;
+  width: 50%;
+  background: #121212;
+  height: 40vh;
+  z-index: 101; }
+  .mobile__nav__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+  .mobile__nav__links {
+    display: flex;
+    flex-direction: column; }
+    .mobile__nav__links a {
+      margin-bottom: 1.5rem;
+      color: #f8f8f8; }
+  .mobile__nav.active {
+    left: 0;
+    height: 100vh; }
+
 .treatments__grad__bg {
   height: 100%;
   background-image: linear-gradient(rgba(28, 28, 28, 0.8), #1c1c1c);
@@ -255,7 +278,7 @@ img {
 .treatment__services__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem; }
+  gap: 2rem; }
 
 .treatment__services__item {
   height: 60vh;
