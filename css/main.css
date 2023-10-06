@@ -74,32 +74,48 @@ img {
     color: #f8f8f8;
     border: 3px solid #f8f8f8; }
 
-.nav {
+.nav,
+.nav.transparent {
   position: fixed;
   width: 100%;
   z-index: 99; }
-  .nav__top {
+  .nav__top,
+  .nav.transparent__top {
     padding: 1rem 0;
     border-bottom: 1px solid #eb9b18; }
-    .nav__top p {
+    .nav__top p,
+    .nav.transparent__top p {
       color: #f8f8f8;
       font-weight: 100; }
-    .nav__top div a img {
+    .nav__top div a img,
+    .nav.transparent__top div a img {
       width: 20px;
       margin: 0 0.35rem; }
-  .nav__bottom {
+  .nav__bottom,
+  .nav.transparent__bottom {
     padding: 1rem 0; }
-  .nav__brand img {
+  .nav__brand img,
+  .nav.transparent__brand img {
     width: 50px; }
-  .nav__links a {
+  .nav__links a,
+  .nav.transparent__links a {
     color: #f8f8f8;
     margin-left: 1rem;
     font-weight: 200;
     transition: 0.35s; }
-    .nav__links a:hover {
+    .nav__links a:hover,
+    .nav.transparent__links a:hover {
       color: #eb9b18; }
-  .nav__hamburger {
+  .nav__hamburger,
+  .nav.transparent__hamburger {
     display: none; }
+
+.nav.scrolled {
+  background: #f8f8f8; }
+  .nav.scrolled .nav__top div p {
+    color: #121212; }
+  .nav.scrolled .nav__links a {
+    color: #121212; }
 
 @media screen and (max-width: 450px) {
   .nav__top {
@@ -150,13 +166,14 @@ img {
       font-size: 1.1rem; } }
 
 .services {
-  background: #1c1c1c; }
+  background: #1c1c1c;
+  padding-bottom: 5rem; }
   .services__grid {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr); }
   .services__item {
-    height: 40vh;
+    height: 50vh;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -183,3 +200,103 @@ img {
     gap: 2rem; }
   .services__item:first-child {
     grid-column: 1; } }
+
+.footer {
+  padding: 2rem 0;
+  background: #121212; }
+  .footer a {
+    color: #f8f8f8; }
+  .footer p {
+    color: #f8f8f8; }
+  .footer__container {
+    text-align: center;
+    font-size: 0.8rem; }
+
+@media screen and (max-width: 450px) {
+  .footer p {
+    font-size: 0.75rem; } }
+
+.treatments__grad__bg {
+  height: 100%;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.8), #1c1c1c);
+  position: relative; }
+  .treatments__grad__bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/dist/assets/img/treat.jpg") no-repeat center center/cover;
+    z-index: -1; }
+  @media screen and (max-width: 450px) {
+    .treatments__grad__bg::before {
+      background: url("/dist/assets/img/joint.jpg") no-repeat center center/cover; } }
+
+.treatments__header {
+  height: 100vh; }
+  .treatments__header__container {
+    height: 100%; }
+  .treatments__header__content {
+    width: 60%;
+    color: #f8f8f8; }
+    .treatments__header__content img {
+      width: 60%;
+      margin-bottom: 1rem; }
+
+@media screen and (max-width: 450px) {
+  .treatments__header {
+    height: 80vh; }
+    .treatments__header__content {
+      width: 100%; }
+      .treatments__header__content p {
+        font-size: 0.9rem; } }
+
+.treatment__services__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; }
+
+.treatment__services__item {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem; }
+  .treatment__services__item:first-child {
+    background: url("/dist/assets/img/mma.jpg") no-repeat center center/cover; }
+  .treatment__services__item:nth-child(2) {
+    background: url("/dist/assets/img/HFS.jpeg") no-repeat center center/cover; }
+  .treatment__services__item:nth-child(3) {
+    background: url("/dist/assets/img/treat.jpg") no-repeat center center/cover; }
+  .treatment__services__item:nth-child(4) {
+    background: url("/dist/assets/img/sport.jpg") no-repeat center center/cover; }
+  .treatment__services__item:nth-child(5) {
+    background: url("/dist/assets/img/soft.jpg") no-repeat center center/cover; }
+  .treatment__services__item:nth-child(6) {
+    background: url("/dist/assets/img/joint.jpg") no-repeat center center/cover; }
+  .treatment__services__item:nth-child(7) {
+    background: url("/dist/assets/img/pre.jpg") no-repeat center center/cover; }
+  .treatment__services__item:nth-child(8) {
+    background: url("/dist/assets/img/anti.jpg") no-repeat center center/cover; }
+  .treatment__services__item:nth-child(9) {
+    background: url("/dist/assets/img/dec.jpg") no-repeat center center/cover; }
+
+.treatment__services__content {
+  background: rgba(18, 18, 18, 0.8);
+  color: #f8f8f8;
+  width: 85%;
+  margin: auto;
+  padding: 1rem;
+  backdrop-filter: blur(5px);
+  border-radius: 0.75rem; }
+  .treatment__services__content h2 {
+    margin-bottom: 1rem; }
+
+.treatment__services__img {
+  width: 100%; }
+
+@media screen and (max-width: 450px) {
+  .treatment__services__container {
+    grid-template-columns: repeat(1, 1fr); } }

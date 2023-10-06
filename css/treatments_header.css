@@ -1,0 +1,22 @@
+.treatments__grad__bg {
+  height: 100vh;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.6), #1c1c1c);
+  position: relative; }
+  .treatments__grad__bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/dist/assets/img/treat.jpg") no-repeat center center/cover;
+    z-index: -1; }
+
+.treatments__header {
+  height: 100%; }
+  .treatments__header__container {
+    height: 80vh; }
+  .treatments__header__content {
+    width: 50%; }
+    .treatments__header__content img {
+      width: 40%; }
